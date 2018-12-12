@@ -8,17 +8,14 @@ body {
    padding-right: 200px;
 }
 
-.item-a {
-  grid-column-start: 2;
-  grid-column-end: five;
-  grid-row-start: row1-start
-  grid-row-end: 3;
-}
 
 .container {
   grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 25% 100px auto;
 
+  /*sets up flexbox*/
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
@@ -37,12 +34,6 @@ body {
   height: auto;
 }
 
-.selfPic
-{
-    background-image: url('assets/images/hipster-dog.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 10px;
-}
 
 h1 {
 	font-family: Arial;	
@@ -92,6 +83,7 @@ h6 {
   width: 100%; /* Full width */
   display: flex;
   justify-content: center;
+  z-index: 50;
 }
 
 .navbar a {
@@ -205,6 +197,6 @@ h6 {
 		width: 70%;
 		height: 100%;
 		border: 3px;
-		float: right;
+		float: center;
 		padding:10px 30px	
 }
